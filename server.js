@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const db = require ('./database/db') 
-
+const PORT = process.env.PORT || 3030;     
 
 
 require('dotenv').config();
@@ -20,10 +20,11 @@ app.post('/register', controllers.register);
 app.post('/login', controllers.login);
 app.post('/infoPokemon', controllers.infoPokemon);
 app.get('/getPokemon', controllers.getPokemon);
+app.put('/putTiempoYNivel/:id', controllers.putTiempoYNivel);
 
 
 
-const PORT = 3030;
+
 
 app.listen (PORT, () =>{
     console.log(`Servidor ${PORT} funcionando.`)
