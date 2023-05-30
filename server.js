@@ -1,10 +1,10 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const db = require ('./database/db') 
 const PORT = process.env.PORT || 3030;     
 
 
-require('dotenv').config();
 
 const controllers = require('./controllers');
 const verifyToken = require('./middlewares/verifyToken');
