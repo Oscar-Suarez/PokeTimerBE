@@ -6,7 +6,7 @@ const db = async () => {
     let connectionString = MONGO_URL;
 
 
-    if (process.env.RENDER) {
+    if (process.env) {
         connectionString = RENDER_URL;
     }
 
