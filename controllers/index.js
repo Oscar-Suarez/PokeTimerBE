@@ -4,7 +4,7 @@ const getUserById = require('./getUserById');
 const infoPokemon = require('./infoPokemon');
 const getPokemon = require('./getPokemon')
 const putTiempoYNivel = require('./putTiempoYNivel');
-const putPokeball = require('./putPokeball');
+const putPokeballyMedallas = require('./putPokeballyMedallas');
 
 module.exports = {
     register,
@@ -13,6 +13,6 @@ module.exports = {
     infoPokemon,
     getPokemon,
     putTiempoYNivel,
-    putPokeball,
+    putPokeballyMedallas,
 };
 
