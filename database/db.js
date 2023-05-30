@@ -1,4 +1,7 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
+
+
 // const MONGO_URL = 'mongodb://127.0.0.1:27017/bd';
 const RENDER_URL = process.env.RENDER_URL;
 
