@@ -21,7 +21,7 @@ app.post('/login', controllers.login);
 app.post('/infoPokemon', controllers.infoPokemon);
 app.get('/getPokemon', controllers.getPokemon);
 app.put('/putTiempoYNivel/:id', controllers.putTiempoYNivel);
-
+app.put('/putPokeball/:id', controllers.putPokeball);
 
 
 

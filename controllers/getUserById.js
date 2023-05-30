@@ -4,7 +4,7 @@ const getUserById = async (req, res) => {
   const {id} = req.user;
 
   if (id.length === 24) {
-    Usuario.findById(userId).then((usuario) => {
+    Usuario.findById(id).then((usuario) => {
       if (!usuario) {
         return res.json({
           mensaje: "No se encontro ningun usuario con esa ID",
