@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const MONGO_URL = 'mongodb://127.0.0.1:27017/bd';
-const RENDER_URL = 'https://poketimer-back.onrender.com';
+const RENDER_URL = 'mongodb+srv:https://poketimer-back.onrender.com';
 
 const db = async () => {
     let connectionString = MONGO_URL;
